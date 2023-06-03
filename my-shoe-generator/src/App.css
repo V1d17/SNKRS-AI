@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styling when an option is selected */
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Styling for the "Generate" button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+select.error {
+  border-color: red;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.input-container {
+  width: 30%;
+  padding: 20px;
+  font: 1em sans-serif;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Additional styling for better visual presentation */
+.container {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+  height: 100%; /* you may need to adjust this */
+}

@@ -1,0 +1,40 @@
+
+.empty-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5em; /* adjust as needed */
+  font-weight: bold;
+  text-align: center;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    50% { border-color: transparent; }
+  }
+  
+  @keyframes hide-cursor {
+    to { border-color: transparent; }
+  }
+  
+
+  .typing-animation {
+    font-size: 1.5em; /* adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #007bff; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives it width to work with */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite, /* Adjusted to blink for 10 seconds */
+      hide-cursor 0s 10s forwards; /* After 10 seconds, the cursor will disappear */
+  }
+  
+  

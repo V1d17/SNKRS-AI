@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../cgan_generator_with_colors.h5"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../shoeapi"
+		}
+	]
+}
